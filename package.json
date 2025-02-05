@@ -1,0 +1,46 @@
+{
+  "name": "koperasi-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@material-tailwind/react": "^2.1.10",
+    "@radix-ui/react-icons": "^1.3.0",
+    "@react-google-maps/api": "^2.19.3",
+    "@types/jwt-decode": "^3.1.0",
+    "axios": "^1.7.9",
+    "buffer": "^6.0.3",
+    "heroicons": "^2.2.0",
+    "jspdf": "^2.5.2",
+    "jwt-decode": "^4.0.0",
+    "node-cron": "^3.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-google-recaptcha": "^3.1.0",
+    "react-router-dom": "^6.28.0",
+    "swiper": "^11.1.14",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.9.0",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.9",
+    "globals": "^15.9.0",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13",
+    "vite": "^5.4.1"
+  }
+}

@@ -1,0 +1,177 @@
+###
+POST http://localhost:5000/createJob
+Content-Type: application/json
+
+[
+    {
+        "JOB_CODE": "ANGGOTA",
+        "JOB_DESC": "Anggota Adalah Anggota Koperasi"
+    },
+    {
+        "JOB_CODE": "PENGURUS",
+        "JOB_DESC": "Pengurus Adalah Yang Ngurus"
+    },
+    {
+        "JOB_CODE": "ADMIN",
+        "JOB_DESC": "Admin Adalah Yang Atur"
+    }
+]
+
+### Create Default MS_STATUS_PINJAMAN Data
+POST http://localhost:5000/createStatus/PINJAMAN
+Content-Type: application/json
+
+[
+    {    
+        "IS_ACTIVE": 1,
+        "IS_DELETED": 0,
+        "USR_CRT": "admin",
+        "STATUS_CODE": "ACTIVE",
+        "STATUS_NAME": "Aktif",
+        "STATUS_DESC": "Pengajuan sedang aktif dan belum di proses."
+    },
+    {
+        "IS_ACTIVE": 1,
+        "IS_DELETED": 0,
+        "USR_CRT": "admin",
+        "STATUS_CODE": "APPROVED",
+        "STATUS_NAME": "Disetujui",
+        "STATUS_DESC": "Pengajuan sudah disetujui."
+    },
+    {
+        "IS_ACTIVE": 1,
+        "IS_DELETED": 0,
+        "USR_CRT": "admin",
+        "STATUS_CODE": "DECLINED",
+        "STATUS_NAME": "Ditolak",
+        "STATUS_DESC": "Pengajuan sudah ditolak."
+    },
+    {
+        "IS_ACTIVE": 1,
+        "IS_DELETED": 0,
+        "USR_CRT": "admin",
+        "STATUS_CODE": "ABORTED",
+        "STATUS_NAME": "Dibatalkan",
+        "STATUS_DESC": "Pengajuan dibatalkan."
+    }
+]
+
+### Create Default MS_STATUS_PINJAMAN Data
+POST http://localhost:5000/createStatus/SIMPANAN
+Content-Type: application/json
+
+[
+    {    
+        "IS_ACTIVE": 1,
+        "IS_DELETED": 0,
+        "USR_CRT": "admin",
+        "STATUS_CODE": "ACTIVE",
+        "STATUS_NAME": "Aktif",
+        "STATUS_DESC": "Pengajuan sedang aktif dan belum di proses."
+    },
+    {
+        "IS_ACTIVE": 1,
+        "IS_DELETED": 0,
+        "USR_CRT": "admin",
+        "STATUS_CODE": "APPROVED",
+        "STATUS_NAME": "Disetujui",
+        "STATUS_DESC": "Pengajuan sudah disetujui."
+    },
+    {
+        "IS_ACTIVE": 1,
+        "IS_DELETED": 0,
+        "USR_CRT": "admin",
+        "STATUS_CODE": "DECLINED",
+        "STATUS_NAME": "Ditolak",
+        "STATUS_DESC": "Pengajuan sudah ditolak."
+    },
+    {
+        "IS_ACTIVE": 1,
+        "IS_DELETED": 0,
+        "USR_CRT": "admin",
+        "STATUS_CODE": "ABORTED",
+        "STATUS_NAME": "Dibatalkan",
+        "STATUS_DESC": "Pengajuan dibatalkan."
+    }
+]
+
+### Create Default MS_TYPE_PINJAMAN Data
+POST http://localhost:5000/createType/PINJAMAN
+Content-Type: application/json
+
+[
+    {    
+        "IS_ACTIVE": 1,
+        "IS_DELETED": 0,
+        "USR_CRT": "admin",
+        "TYPE_NAME": "KPKA",
+        "TYPE_DESC": "Kredit Pelayanan Khusus Anggota",
+        "TENOR":3,
+        "INTEREST_RATE": 1.5,
+        "MINIMUM_PINJAMAN": 1000000,
+        "MAXIMUM_PINJAMAN": 20000000
+    },
+    {    
+        "IS_ACTIVE": 1,
+        "IS_DELETED": 0,
+        "USR_CRT": "admin",
+        "TYPE_NAME": "UKSP",
+        "TYPE_DESC": "Usaha Kredit Simpan Pinjam",
+        "TENOR": 5,
+        "INTEREST_RATE": 1.5,
+        "MINIMUM_PINJAMAN": 10000000,
+        "MAXIMUM_PINJAMAN": 80000000
+    },
+    {    
+        "IS_ACTIVE": 1,
+        "IS_DELETED": 0,
+        "USR_CRT": "admin",
+        "TYPE_NAME": "UKTP",
+        "TYPE_DESC": "Usaha Kredit Tunjangan Profesi",
+        "TENOR": 7,
+        "INTEREST_RATE": 1.5,
+        "MINIMUM_PINJAMAN": 5000000,
+        "MAXIMUM_PINJAMAN": 50000000
+    }
+]
+
+### Create Default MS_TYPE_SIMPANAN Data
+POST http://localhost:5000/createType/SIMPANAN
+Content-Type: application/json
+
+[
+    {    
+        "IS_ACTIVE": 1,
+        "IS_DELETED": 0,
+        "USR_CRT": "admin",
+        "TYPE_NAME": "Simpanan Sukarela",
+        "TYPE_DESC": "Simpanan tidak wajib setiap anggota.",
+        "INTEREST_RATE": 0.6,
+        "MINIMUM_SIMPANAN": 500000,
+        "MAXIMUM_SIMPANAN": 10000000,
+        "IS_MANDATORY": 0,
+        "IS_AUTO_APPROVE": 0
+    },
+    {    
+        "IS_ACTIVE": 1,
+        "IS_DELETED": 0,
+        "USR_CRT": "admin",
+        "TYPE_NAME": "Simpanan Wajib",
+        "TYPE_DESC": "Simpanan wajib setiap anggota.",
+        "INTEREST_RATE": 0.6,
+        "IS_MANDATORY": 1,
+        "DEFAULT_NOMINAL": 100000,
+        "IS_AUTO_APPROVE": 1
+    },
+    {    
+        "IS_ACTIVE": 1,
+        "IS_DELETED": 0,
+        "USR_CRT": "admin",
+        "TYPE_NAME": "Simpanan Pokok",
+        "TYPE_DESC": "Simpanan pokok setiap anggota.",
+        "INTEREST_RATE": 0.6,
+        "IS_MANDATORY": 1,
+        "DEFAULT_NOMINAL": 50000,
+        "IS_AUTO_APPROVE": 1
+    }
+]

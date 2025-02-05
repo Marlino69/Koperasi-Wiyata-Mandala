@@ -1,0 +1,173 @@
+POST http://localhost:5000/getPengajuan
+Content-Type: application/json
+
+{
+    "PENGAJUAN": "PINJAMAN",
+    "UUID_MS_TYPE": "", 
+    "UUID_MS_USER": 1, 
+    "UUID_MS_STATUS": "" 
+}
+
+###
+POST http://localhost:5000/getFilteredPengajuan
+Content-Type: application/json
+
+{
+    "UUID_MS_USER": "",
+    "PENGAJUAN": "PINJAMAN",
+    "lastId": "2061",
+    "lastColumn": "2024-12-11T15:04:05.184Z",
+    "sortBy": "DATE",
+    "orderBy": "ASC",
+    "isFiltered": true,
+    "filterAllType": true,
+    "filterAllStatus": true
+}
+
+###
+POST http://localhost:5000/createMandatoryPengajuan
+
+###
+GET http://localhost:5000/getType/SIMPANAN
+Content-Type: application/json
+
+{
+    "IS_MANDATORY": "0"
+}
+
+###
+POST http://localhost:5000/createPengajuan/PINJAMAN
+Content-Type: application/json
+
+{
+    "INTEREST_RATE": 1.5,
+    "NOMINAL": 1500000,
+    "REASON": "Ingin melakukan pinjaman sebesar satu setengah juta untuk keperluan rumah",
+    "TENOR": 3,
+    "USR_CRT": "anggota1@gmail.com",
+    "UUID_MS_STATUS_PINJAMAN": 1,
+    "UUID_MS_TYPE_PINJAMAN": "1",
+    "UUID_MS_USER": "1"
+}
+
+###
+GET http://localhost:5000/getStatus
+###
+GET http://localhost:5000/MS_TYPE_PINJAMAN/getTypePinjaman
+
+###
+GET http://localhost:5000/getTotalPengeluaranAnggota
+Content-Type: application/json
+
+{
+    "anggotaId": 1
+}
+
+###
+GET http://localhost:5000/getJobID
+Content-Type: application/json
+
+{
+    "job_code": "" 
+}
+
+###
+POST http://localhost:5000/getActivePengajuanPinjamanAnggota
+Content-Type: application/json
+
+{
+    "id": 1,
+    "month": 2,
+    "year": 2025
+}
+
+###
+POST http://localhost:5000/getActivePengajuanSimpananAnggota
+Content-Type: application/json
+
+{
+    "id": 1,
+    "month": 11,
+    "year": 2024
+}
+
+### Update STATUS Pengajuan Pinjaman TESTING
+PATCH http://localhost:5000/updateStatusPengajuan
+Content-Type: application/json
+
+{
+    "PENGAJUAN": "SIMPANAN",
+    "id": 2,
+    "status": "APPROVED"
+}
+
+### Update STATUS Pengajuan Pinjaman TESTING
+POST http://localhost:5000/createHistoryPengajuan
+Content-Type: application/json
+
+{
+    "PENGAJUAN": "SIMPANAN",
+    "id": 37
+}
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "IS_ACTIVE": 1,
+    "IS_DELETED": 0,
+    "USR_CRT": "admin",
+    "NOMOR_TELP": "0819788367",
+    "EMAIL": "dummy@gmail.com",
+    "PASSWORD": "dummy",
+    "NAMA_LENGKAP": "dummymomment",
+    "ALAMAT": "dummy lt searganet",
+    "UUID_MS_JOB": 1,
+    "ROLE": "dummy"
+}
+
+###
+DELETE http://localhost:5000/users
+
+###
+GET http://localhost:5000/MS_USER
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjUiLCJpYXQiOjE3MzAyOTI5MjQsImV4cCI6MTczMDI5Mjk1NH0.tFiSsXirYIZl8OkklFBV4phWG9HgpSmMZXK97hMtPUc
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "email": "Nikolas@gmail.com",
+    "password": "12345",
+    "confPassword": "12345",
+    "name": "Niko",
+    "role": "PENGURUS",
+    "noTelp": "08123456789",
+    "alamat": "Jl. Kebon Jeruk No. 1"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "pakquin"
+}
+
+
+###
+GET http://localhost:5000/token
+
+###
+GET http://localhost:5000/getOneUser/1
+
+###
+GET http://localhost:5000/getServerStatus
+
+###
+DELETE http://localhost:5000/logout
+
+###
+DELETE http://localhost:5000/users
