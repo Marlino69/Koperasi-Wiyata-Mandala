@@ -6,9 +6,10 @@ const customLogger = (msg) => {
     console.log(`${timestampColored} - ${msg}`);
 };
   
-const db = new Sequelize('postgres', "postgres", "password", {
+const db = new Sequelize('Koperasi', "postgres", "123", {
     host: "localhost",
     dialect: "postgres",
+    port: "5432",
     logging: customLogger 
 });
 
