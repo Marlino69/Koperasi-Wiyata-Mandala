@@ -115,13 +115,13 @@ function Header() {
 
     return (
         <>
-            <header className='flex shadow-md py-4 px-4 sm:px-10 bg-gradient-to-b from-[#4AA1B4] to-[#57C1A0] font-[sans-serif] min-h-[70px] tracking-wide relative z-50'>
+            <header className='flex shadow-md py-4 px-4 sm:px-10 bg-gradient-to-b from-[#2e86c1] to-[#21618c] font-[sans-serif] min-h-[70px] tracking-wide relative z-50'>
       <div class='flex flex-wrap items-center justify-between gap-5 w-full'>
         <Link to= "/" href="javascript:void(0)">
           <img src={foto} alt="logo" class='w-22' />
         </Link>
 
-        <div 
+        <div
         id="collapseMenu"
           className='max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50'>
           <button id="toggleClose" className='lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white w-9 h-9 flex items-center justify-center border'>
@@ -141,17 +141,35 @@ function Header() {
               <a><img src={foto} alt="logo" class='w-24' />
               </a>
             </li>
+
             <li className='max-lg:border-b border-gray-300 max-lg:py-3 px-3'>
-              <NavLink 
-                to='/' 
-                className={({ isActive }) => 
-                  isActive
-                    ? 'border-b-4 text-white block font-semibold text-[15px] px-3 py-2 rounded-md'
-                    : 'hover:bg-white hover:text-gray-800 block font-semibold text-[15px] px-3 py-2 rounded-md transition duration-300'
-                }
-              >
-                Beranda
-              </NavLink>
+              
+            <NavLink
+  to='/'
+  className={({ isActive }) =>
+    isActive
+      ? 'border-b-4 text-white block font-semibold text-[15px] px-3 py-2 rounded-md'
+      : 'hover:bg-white hover:text-gray-800 block font-semibold text-[15px] px-3 py-2 rounded-md transition duration-300'
+  }
+>
+  Koperasi Widya Mandala
+</NavLink>
+
+            </li>
+            
+            <li className='max-lg:border-b border-gray-300 max-lg:py-3 px-3'>
+              
+            <NavLink
+  to='/'
+  className={({ isActive }) =>
+    isActive
+      ? 'border-b-4 text-white block font-semibold text-[15px] px-3 py-2 rounded-md'
+      : 'hover:bg-white hover:text-gray-800 block font-semibold text-[15px] px-3 py-2 rounded-md transition duration-300'
+  }
+>
+  Beranda
+</NavLink>
+
             </li>
             <li className='max-lg:border-b border-gray-300 max-lg:py-3 px-3'>
             <NavLink

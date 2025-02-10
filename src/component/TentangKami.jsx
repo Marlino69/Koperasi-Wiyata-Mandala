@@ -9,9 +9,10 @@ function TentangKami() {
     return (
         <>
         <H/>
-        <div className="my-[10px] relative">
-            <img src={No1} className="w-full sm:w-11/12 md:w-4/5 lg:w-full mx-auto" alt="Koperasi Wiyata Mandala"/>
-            <div className="relative text-justify text-[20px] bg-gradient-to-b from-[#4AA1B4] to-[#57C1A0] rounded-xl w-11/12 sm:w-4/5 lg:w-2/3 mx-auto p-6 -mt-10 md:-mt-16 lg:-mt-20">
+        <div className="justify-items-stretch bg-cover h-[600px] mt-[10px] pt-[40px] mx-12"
+        style={{ backgroundImage: `url(${No1})` }}>
+            <div className="bg-gradient-to-b from-[#d5dbdb] to-[#95a5a6 ] opacity-[90%] rounded-[24px] justify-self-end mx-14 my-[110px] p-[20px]">
+                <div className="text-[32px] font-bold mb-[10px] text-center">Tentang Kami</div>
                 <h1 className="mb-6">
                     Koperasi Konsumen KPRI "Wiyata Mandala" atau disebut dengan KPRI Wiyata Mandala
                     didirikan pada tahun 1997. Koperasi Konsumen KPRI "Wiyata Mandala" merupakan
@@ -33,49 +34,31 @@ function TentangKami() {
                 </h1>
             </div>
         </div>
-        <div className=" grid grid-cols-2">
-            <div className="bg-gradient-to-b from-[#4AA1B4] to-[#57C1A0] ml-[10px] w-[1453px] h-[560px] rounded-[24px]">
-            <div className="mx-[50px] text-[20px] mt-[20px] flex flex-col items-center space-y-[20px]">
-    <div className="text-[32px] font-bold">
-        Tujuan Koperasi Wiyata Mandala
-    </div>
-    <div className="text-justify max-w-[915px]">
-        <p>
-            1. Meningkatnya kualitas tata kelola organisasi dengan mensinergikan fungsi perencanaan, 
-            pelaksanaan, dan pengawasan melalui pemanfaatan kelengkapan organisasi, SDM, sarana prasarana, 
-            dan anggaran.
-        </p>
-    </div>
-    <div className="text-justify max-w-[915px]">
-        <p>
-            2. Meningkatkan kualitas usaha koperasi dengan memaksimalkan usaha simpan pinjam, penyedia barang dan jasa, 
-            serta usaha lainnya.
-        </p>
-    </div>
-    <div className="text-justify max-w-[915px]">
-        <p>
-            3. Tumbuh kembangnya kepercayaan anggota melalui pengelola koperasi yang profesional dan akuntabel.
-        </p>
-    </div>
-    <div className="text-justify max-w-[1000px] ml-[-150px]">
-        <p>
-            4. Meningkatkan kualitas pelayanan anggota dengan memberikan layanan yang prima.
-        </p>
-    </div>
-    <div className="text-justify max-w-[915px]">
-        <p>
-            5. Meningkatkan kualitas kesejahteraan anggota melalui pemenuhan kebutuhan anggota yang adil dan proporsional.
-        </p>
-    </div>
-</div>
 
-            </div>
-            <img className="ml-[524px] h-[560px] w-[424px]" src={No2}/>
-        </div>
+        <div className="mt-[10px]  bg-center bg-no-repeat bg-cover h-[480px]">
+                        <span className="grid grid-cols-2">
+                            <div className="grid justify-start grid-rows-2">
+                                <h1 className="ml-[100px] mt-[80px] text-4xl font-bold ">Tujuan Koperasi Wiyata Mandala</h1>
+                                <h2 className="ml-[100px] mt-[-80px] text-lg text-justify w-[600px]">
+                                    1. Meningkatnya kualitas tata kelola organisasi dengan mensinergikan fungsi perencanaan, 
+                                    pelaksanaan, dan pengawasan melalui pemanfaatan kelengkapan organisasi, SDM, sarana prasarana, 
+                                    dan anggaran.<br/>
+                                    2. Meningkatkan kualitas usaha koperasi dengan memaksimalkan usaha simpan pinjam, penyedia barang dan jasa, 
+                                    serta usaha lainnya.<br/>
+                                    3. Tumbuh kembangnya kepercayaan anggota melalui pengelola koperasi yang profesional dan akuntabel.<br/>
+                                    4. Meningkatkan kualitas pelayanan anggota dengan memberikan layanan yang prima.<br/>
+                                    5. Meningkatkan kualitas kesejahteraan anggota melalui pemenuhan kebutuhan anggota yang adil dan proporsional.
+                                </h2>
+                                
+                            </div>
+                            <img src={No2} className="grid justify-end w-[600px] h-[300px] mt-[110px] ml-[50px] shadow-lg rounded-2xl"/>
+                        </span>
+                    </div>
+        
 
         <div className="grid grid-cols-2 justify-items-stretch bg-cover w-full h-[750px] mt-[10px]"
         style={{ backgroundImage: `url(${No3})` }}>
-  <div className="bg-gradient-to-b from-[#4AA1B4] to-[#57C1A0] opacity-[90%] w-[600px] rounded-[24px] justify-self-end mr-[100px] my-[50px] p-[20px]">
+  <div className="bg-gradient-to-b from-[#4AA1B4] to-[#57C1A0] w-[600px] rounded-[24px] justify-self-end mr-[100px] my-[50px] p-[20px]">
     <div className="text-[32px] font-bold mb-[10px] text-center">Visi</div>
     <p className="text-justify leading-relaxed text-[20px] mt-[200px]">
       Terwujudnya KOPERASI KONSUMEN KPRI "WIYATA MANDALA" yang mandiri dan tangguh dengan berlandaskan 
