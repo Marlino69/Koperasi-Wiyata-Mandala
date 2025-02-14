@@ -78,30 +78,31 @@ function Beranda() {
             className="mySwiper mt-[10px]"
             >
                 <SwiperSlide>
-                    <img src={gmbr1} className="rounded-[30px]"  alt="Gambar 1" />
+                    <img src={gmbr1} alt="Gambar 1" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={gmbr2} className="rounded-[30px]"  alt="Gambar 2" />
+                    <img src={gmbr2} alt="Gambar 2" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={gmbr3} className="rounded-[30px]" alt="Gambar 3" />
+                    <img src={gmbr3} alt="Gambar 3" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={gmbr1} className="rounded-[30px]"  alt="Gambar 1" />
+                    <img src={gmbr1} alt="Gambar 1" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={gmbr2} className="rounded-[30px]"  alt="Gambar 2" />
+                    <img src={gmbr2} alt="Gambar 2" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={gmbr3} className="rounded-[30px]" alt="Gambar 3" />
+                    <img src={gmbr3} alt="Gambar 3" />
                 </SwiperSlide>
 
             </Swiper>
-            <div style={{ backgroundImage: `url(${gmbr4})` }} className="mt-[10px]  bg-center bg-no-repeat bg-cover h-[480px] ">
+
+            <div className="mt-[10px]  bg-center bg-no-repeat bg-cover h-[480px]">
                 <span className="grid grid-cols-2">
                     <div className="grid justify-start grid-rows-2">
-                        <h1 className="ml-[200px] mt-[100px] text-4xl font-bold ">Tentang Kami</h1>
-                        <h2 className="ml-[200px] mt-[-50px] text-lg text-justify w-[600px]">
+                        <h1 className="ml-[100px] mt-[100px] text-4xl font-bold ">Koperasi Wiyata Mandala</h1>
+                        <h2 className="ml-[100px] mt-[-50px] text-lg text-justify w-[600px]">
                         Koperasi Konsumen KPRI "Wiyata Mandala" atau disebut dengan KPRI Wiyata Mandala didirikan
                         pada tahun 1997. Koperasi Konsumen KPRI "Wiyata Mandala" merupakan koperasi yang bergerak 
                         di bidang simpan pinjam, Tabungan Koperasi "Takop", UKM Mart, dan lain-lain. Koperasi Pegawal 
@@ -111,21 +112,17 @@ function Beranda() {
                         anggotanya.
                         </h2>
                     </div>
-                    <img src={gmbr5} className="grid justify-end w-[600px] h-[300px] mt-[90px] ml-[165px] shadow-lg rounded-2xl"/>
+                    <img src={gmbr5} className="grid justify-end w-[600px] h-[300px] mt-[110px] ml-[50px] shadow-lg rounded-2xl"/>
                 </span>
             </div>
-            <div className="grid grid-cols-2 mt-[10px]">
-                <div style={{ backgroundImage: `url(${gmbr6})` }} className="w-[520px] bg-no-repeat bg-cover h-[1439px] ml-[10px]">
-                    <h1 className="ml-[150px] mt-[525px] text-4xl">Produk Kami</h1>
-                </div>
-
-                <div className="bg-gradient-to-b from-[#4AA1B4] to-[#57C1A0] w-[1357px] ml-[-409px] ">
-                    <div className="relative flex flex-col md:flex-row w-[800px] h-[265px] mt-[20px] ml-[150px] bg-white shadow-sm border border-slate-200 bg-opacity-50 rounded-[40px] ">
+            
+                <div>
+                    <div className="relative flex flex-col md:flex-row h-[400px] ml-[50px] mr-[50px] bg-white bg-opacity-50 rounded-md md:rounded-lg pb-3 border-2 border-gray-200">
                        <div className="relative p-2.5 md:w-2/5 shrink-0 overflow-hidden">
                            <img
                                src={gmbrSP}
                                alt="card-image"
-                               className=" w-full rounded-md md:rounded-lg object-cover"
+                               className="object-cover w-full rounded-md md:rounded h-[380px]"
                            />
                        </div>
                        <div className="p-6">
@@ -145,7 +142,7 @@ function Beranda() {
                         </div>
                     </div> 
                     
-                    <div className="relative flex flex-col md:flex-row w-[800px] h-[265px] mt-[20px] ml-[400px] bg-white shadow-sm border border-slate-200 bg-opacity-50 rounded-[40px] ">
+                    <div className="relative flex flex-col md:flex-row h-[400px] ml-[50px] mr-[50px] bg-white bg-opacity-50  rounded-md md:rounded-lg pb-3 border-2 border-gray-200 mt-[40px]">
                        <div className="p-6">
                             <div className="mb-4 rounded-full bg-teal-600 py-0.5 px-2.5 border border-transparent text-xs text-white transition-all shadow-sm w-20 text-center">On-Going</div>
                             <h4 className="mb-2 text-slate-800 text-2xl font-semibold">
@@ -165,17 +162,17 @@ function Beranda() {
                             <img
                                 src={gmbrSW}
                                 alt="card-image"
-                                class=" w-full rounded-md md:rounded-lg object-cover"
+                                class="object-cover rounded-md md:rounded-lg w-full h-[380px]"
                             />
                             </div>
                     </div> 
 
-                <div className="relative flex flex-col md:flex-row w-[800px] h-[265px] mt-[20px] ml-[150px] bg-white shadow-sm border border-slate-200 bg-opacity-50 rounded-[40px] ">
+                <div className="relative flex flex-col md:flex-row h-[400px] ml-[50px] mr-[50px] bg-white bg-opacity-50  rounded-md md:rounded-lg pb-3 border-2 border-gray-200 mt-[40px]">
                        <div className="relative p-2.5 md:w-2/5 shrink-0 overflow-hidden">
                            <img
                                src={gmbrSS}
                                alt="card-image"
-                               className=" w-full rounded-md md:rounded-lg object-cover"
+                               className="object-cover rounded-md md:rounded-lg w-full h-[380px]"
                            />
                        </div>
                        <div className="p-6">
@@ -195,7 +192,7 @@ function Beranda() {
                         </div>
                     </div> 
 
-                <div className="relative flex flex-col md:flex-row w-[800px] h-[265px] mt-[20px] ml-[400px] bg-white shadow-sm border border-slate-200 bg-opacity-50 rounded-[40px] ">
+                <div className="relative flex flex-col md:flex-row h-[400px] ml-[50px] mr-[50px] bg-white bg-opacity-50  rounded-md md:rounded-lg pb-3 border-2 border-gray-200 mt-[40px]">
                        
                        <div className="p-6">
                         <div className="mb-4 rounded-full bg-teal-600 py-0.5 px-2.5 border border-transparent text-xs text-white transition-all shadow-sm w-20 text-center">On-Going</div>
@@ -216,17 +213,17 @@ function Beranda() {
                            <img
                                src={gmbrSHR}
                                alt="card-image"
-                               className=" w-full rounded-[24px] object-cover"
+                               className="object-cover rounded-md md:rounded-lg w-full h-[400px]"
                            />
                        </div>
                     </div> 
 
-                <div className="relative flex flex-col md:flex-row w-[800px] h-[265px] mt-[20px] ml-[150px] bg-white shadow-sm border border-slate-200 bg-opacity-50 rounded-[40px] ">
+                <div className="relative flex flex-col md:flex-row h-[400px] ml-[50px] mr-[50px] bg-white bg-opacity-50  rounded-md md:rounded-lg pb-3 border-2 border-gray-200 mt-[40px]">
                        <div className="relative p-2.5 md:w-2/5 shrink-0 overflow-hidden">
                            <img
                                src={gmbrSSP}
                                alt="card-image"
-                               className=" w-full rounded-md md:rounded-lg object-cover"
+                               className="object-cover rounded-md md:rounded-lg w-full h-[400px]"
                            />
                        </div>
                        <div className="p-6">
@@ -246,7 +243,6 @@ function Beranda() {
                         </div>
                     </div>   
                 </div>
-            </div>
             <div className="container mx-auto px-4 py-8">
                     <h2 className="text-2xl font-bold mb-4">Berita Terkini</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
