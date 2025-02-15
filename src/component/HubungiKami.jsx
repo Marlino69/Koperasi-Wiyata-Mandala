@@ -45,19 +45,19 @@ function HubungiKami() {
             <button className="bg-blue-500 hover:bg-blue-800 text-white w-full h-[50px]  font-bold mt-[10px]  px-2 rounded">Kirim</button>
 
             </form>
-            <div className="bg-gradient-to-b from-[#4AA1B4] to-[#57C1A0] w-[580px] h-[610px] mr-[220px]">
-                <h1 className="text-[50px] ml-[40px]">INFORMASI <hr class="my-6 border-gray-200  dark:border-gray-700" /></h1>
-                <div className="flex items-center  my-[40px]"> 
-                    <PersonIcon className="mx-[30px]" style={{ width: '80px', height: '80px' }} /> 085814197494
+            <div className="bg-gradient-to-b from-[#2e86c1] to-[#21618c] mt-28 w-96 h-96 rounded-lg">
+                <h1 className="text-3xl mt-3 text-white text-center">INFORMASI </h1>
+                <div className="flex items-center mt-4 text-white"> 
+                    <PersonIcon className="mx-[30px] text-white" style={{ width: '40px', height: '40px' }} /> 085814197494
                 </div>
-                <div className="flex items-center  my-[40px]">
-                    <EnvelopeOpenIcon className="mx-[30px]" style={{ width: '80px', height: '80px' }}/> nikolasfebriann@gmail.com
+                <div className="flex items-center  my-[40px] text-white">
+                    <EnvelopeOpenIcon className="mx-[30px] text-white" style={{ width: '40px', height: '40px' }}/> nikolasfebriann@gmail.com
                 </div>
-                <div className="flex items-center  my-[40px]">
-                    <HomeIcon className="mx-[30px]" style={{ width: '80px', height: '80px' }}/> Jln. Balaraja - Kronjo Desa Pasilian RT 3 RW 3
+                <div className="flex items-center  my-[40px] text-white">
+                    <HomeIcon className="mx-[30px] text-white" style={{ width: '40px', height: '40px' }}/> Jln. Balaraja - Kronjo Desa Pasilian RT 3 RW 3
                 </div>
-                <div className="flex items-center my-[40px]">
-                    <ClockIcon className="mx-[30px]" style={{ width: '80px', height: '80px' }}/>08.00 - 17.00 WIB
+                <div className="flex items-center my-[40px] text-white">
+                    <ClockIcon className="mx-[30px] text-white" style={{ width: '40px', height: '40px' }}/>08.00 - 17.00 WIB
                 </div>
             </div>
         </div>

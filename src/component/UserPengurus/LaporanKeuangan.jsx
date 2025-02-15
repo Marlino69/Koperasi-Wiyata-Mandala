@@ -264,8 +264,8 @@ const LaporanKeuangan = () => {
     <div className="flex flex-col min-h-screen bg-gray-100">
       <H />
       <main className="flex-grow p-4">
-        <header className="bg-gradient-to-b from-[#4AA1B4] to-[#57C1A0] text-white p-4 rounded-lg flex justify-between items-center mb-4">
-          <h1 className="text-xl font-semibold">LAPORAN</h1>
+        <header className="bg-gradient-to-b from-[#2e86c1] to-[#21618c] text-white p-4 rounded-lg flex justify-between items-center mb-4">
+          <h1 className="text-xl font-semibold">LAPORAN KEUANGAN</h1>
           <span>Data Laporan</span>
         </header>
 

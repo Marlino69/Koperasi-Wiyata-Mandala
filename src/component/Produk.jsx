@@ -11,7 +11,7 @@ function Produk() {
     return (
         <>
         <H/>
-        <div className=" bg-gradient-to-b from-[#4AA1B4] to-[#57C1A0] grid justify-center mt-[10px]">
+        <div className=" bg-white grid justify-center mt-[10px]">
             <div className="grid grid-cols-2">
                 <div class="relative flex flex-col md:flex-row w-[800px] h-[300px] mt-[20px] ml-[150px] bg-white shadow-sm border border-slate-200 bg-opacity-50 rounded-[40px] ">
                        <div class="relative ml-[20px] mt-[20px] md:w-2/5 shrink-0 overflow-hidden">
@@ -97,7 +97,7 @@ function Produk() {
                             </div>
                         </div> 
                 </div>
-                <div class="relative flex flex-col md:flex-row w-[1620px] h-[300px] mt-[20px] mb-[24px] ml-[150px] bg-white shadow-sm border border-slate-200 bg-opacity-50 rounded-[40px] ">
+                <div class="relative flex flex-col md:flex-row w-[1500px] h-[300px] mt-[20px] mb-[24px] ml-[150px] bg-white shadow-sm border border-slate-200 bg-opacity-50 rounded-[40px] ">
                        <div class="relative ml-[20px] mt-[20px] md:w-2/5 shrink-0 overflow-hidden">
                            <img
                                src={gmbrSSP}

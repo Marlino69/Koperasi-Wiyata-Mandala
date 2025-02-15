@@ -7,8 +7,8 @@ import { formatRupiah } from '../../utils/utils';
 
 const SearchFilterBar = ({ filterCriteria, setFilterCriteria, handleSearch, handleFilter }) => {
   return (
-    <div className="flex flex-col md:flex-row md:justify-between items-center p-4 bg-gray-100 shadow-sm space-y-4 md:space-y-0">
-      <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4 w-full md:w-3/4">
+    <div className="flex flex-col md:flex-row md:justify-start items-center p-4 bg-gray-100 shadow-sm space-y-4 md:space-y-0">
+      <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 w-full md:w-3/4">
         <select
           className="border p-2 rounded-md bg-white flex-grow sm:flex-grow-0 w-full sm:w-auto"
           value={filterCriteria.selectedOption}
@@ -33,7 +33,7 @@ const SearchFilterBar = ({ filterCriteria, setFilterCriteria, handleSearch, hand
 
         <button
           onClick={handleSearch}
-          className="p-2 bg-teal-500 text-white rounded-md w-full sm:w-auto"
+          className="p-2 bg-gradient-to-b from-[#2e86c1] to-[#21618c] text-white rounded-md w-full sm:w-auto"
         >
           Search
         </button>
@@ -60,7 +60,7 @@ const FilterButton = ({ handleFilter }) => {
 
   return (
     <div className="relative">
-      <button onClick={toggleMenu} className="p-2 bg-teal-500 text-white rounded-md">Filter</button>
+      <button onClick={toggleMenu} className="p-2 bg-gradient-to-b from-[#2e86c1] to-[#21618c] text-white rounded-md">Filter</button>
       {isOpen && (
         <div className="absolute right-0 mt-2 w-40 bg-white shadow-lg rounded-md z-10">
           <button onClick={() => handleSort('asc')} className="block w-full text-left px-4 py-2 hover:bg-gray-200">Ascending</button>
@@ -312,10 +312,12 @@ const ListUser = () => {
   };
 
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <H />
+      <main className="flex-grow container mx-auto p-6">
       <SearchFilterBar filterCriteria={filterCriteria} setFilterCriteria={setFilterCriteria} handleSearch={handleSearch} handleFilter={handleFilter} />
       <DataTable data={data} onSort={handleSort} />
+      </main>
       <F />
     </div>
   );

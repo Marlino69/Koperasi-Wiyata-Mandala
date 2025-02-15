@@ -265,7 +265,7 @@ function HalamanAwalSimpanPinjam() {
               <div className="col-span-1 row-span-4">
                 <div className="flex flex-col">
                   <div className="w-full mx-auto">
-                    <div className="bg-gradient-to-b from-[#4AA1B4] to-[#57C1A0] text-white rounded-lg shadow-md p-8 mb-6 text-center relative h-full">
+                    <div className="bg-gradient-to-b from-[#2e86c1] to-[#21618c] text-white rounded-lg shadow-md p-8 mb-6 text-center relative h-full">
                       <div className="w-52 h-52 bg-gray-300 rounded-full mx-auto mb-4">
                         Profile Picture
                       </div>

@@ -72,10 +72,16 @@ const BeritaMenu = () => {
         <>
             <H />
             <div className="container mx-auto px-4 py-8">
-                <h1 className="text-center bg-gradient-to-b from-[#4AA1B4] to-[#57C1A0] text-white py-2 mb-4">Berita</h1>
-                <div className="mb-4">
-                    <a href="/FormBuatBerita" className="bg-gradient-to-b from-[#4AA1B4] to-[#57C1A0] text-white py-2 px-4 rounded-md">Membuat berita baru</a>
+                <div className="grid grid-cols-2 mb-8">
+                    <div className='ml-4 mt-2'> 
+                        <h1 className=" text-black font-bold text-5xl">Berita</h1>
+                    </div>
+                   
+                    <div className='mt-5 text-right'>
+                        <a href="/FormBuatBerita" className="bg-gradient-to-b from-[#2e86c1] to-[#21618c] text-white py-2 px-4 mr-4 rounded-md">+ Membuat berita baru</a>
+                    </div>
                 </div>
+               
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                     {berita.map((item) => {
                         return (

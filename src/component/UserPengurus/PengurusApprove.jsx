@@ -144,7 +144,7 @@ const PengurusApprove = () => {
                     />
                     <button
                         type="submit"
-                        className="ml-4 bg-gray-200 text-gray-700 px-4 py-2 rounded hover:bg-gray-300"
+                        className="ml-4 bg-gradient-to-b from-[#2e86c1] to-[#21618c] text-white px-4 py-2 rounded hover:bg-gray-300"
                     >
                         Search
                     </button>

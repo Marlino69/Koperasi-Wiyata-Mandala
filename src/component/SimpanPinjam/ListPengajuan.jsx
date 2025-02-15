@@ -348,7 +348,7 @@ const SearchFilterBar = ({ setFilters, setIsFetchMore }) => {
 
       <div>
         <button
-            className="py-1 bg-gray-600 text-white rounded-md pl-2 pr-6 ml-2 hover:bg-gray-500 transition-all duration-300"
+            className="py-1 bg-gradient-to-b from-[#2e86c1] to-[#21618c] text-white rounded-md pl-2 pr-6 ml-2 hover:bg-gray-500 transition-all duration-300"
             onClick={toggleFilter}
           >
             <div className='flex flex-1 space-x-4'><Filter_icon /> <span>Filter</span></div>
