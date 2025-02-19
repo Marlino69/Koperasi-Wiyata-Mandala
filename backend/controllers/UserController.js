@@ -388,6 +388,8 @@ export const getOneUser = async (req, res) => {
                 "NOMOR_TELP",
                 "EMAIL",
                 "TANGGAL_LAHIR",
+                "UNIT_KERJA",
+                "NOMOR_ANGGOTA",
                 "ALAMAT",
                 "createdAt"
             ]
