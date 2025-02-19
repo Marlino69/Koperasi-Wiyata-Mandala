@@ -89,7 +89,7 @@ function Register(){
                         </svg>
                         <span className="mx-2">Pengurus</span>
                     </button>
-                    <button 
+                    {/* <button 
                     value={role}
                         onClick={() => setRole('ADMIN')}  
                         className={`flex justify-center w-full px-6 py-3 mt-4 rounded-lg md:mt-0 md:w-auto md:mx-2 focus:outline-none ${role === 'ADMIN' ? 'bg-blue-500 text-white' : 'bg-gray-200 text-blue-500'}`}>
@@ -97,7 +97,7 @@ function Register(){
                             <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                         </svg>
                         <span className="mx-2">Admin</span>
-                    </button>
+                    </button> */}
                 </div>
             </div>
 
