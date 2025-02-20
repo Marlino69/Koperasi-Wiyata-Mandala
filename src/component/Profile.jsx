@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import H from "./H&F/Header";
 import F from "./H&F/Footer";  
-import foto from './Foto/Koperasi_profile.png';
+import foto from './Foto/pancasila.jpg';
 import { useNavigate } from 'react-router-dom';
 import { jwtDecode }  from 'jwt-decode';
 import axios from 'axios';
@@ -79,12 +79,12 @@ export default function Profile() {
         <div className="hidden md:flex md:w-1/2 h-full items-center justify-center">
           <img 
             src={foto} 
-            className="w-[600px] h-[850px] object-cover rounded-lg shadow-lg mt-16" 
+            className="w-[600px] h-[650px] object-cover rounded-lg shadow-lg mt-16" 
             alt="Koperasi Logo" 
           />
         </div>
 
-        <div className="flex-grow md:w-1/2 p-8 md:p-16 flex items-center justify-center bg-white">
+        <div className="flex-grow md:w-1/2 p-8 md:p-16 flex items-center justify-center">
           <div className="w-full max-w-lg p-6 rounded-lg shadow-lg bg-gray-200">
             <div className="flex flex-col items-center mb-6">
               <div className="w-24 h-24 rounded-full bg-gray-300 flex items-center justify-center mb-4">
