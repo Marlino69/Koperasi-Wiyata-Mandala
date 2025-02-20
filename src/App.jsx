@@ -1,5 +1,10 @@
 import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import axios from 'axios';
+import {
+  getCurrentLoggedInID
+} from './utils/utils.js'
+
 import Beranda from './component/Beranda';
 import TtgKam from './component/TentangKami';
 import Prdk from './component/Produk';
@@ -21,6 +26,13 @@ import FormPengajuanSimpanan from './component/SimpanPinjam/FormPengajuanSimpana
 import HalamanAwalSimpanPinjam from './component/SimpanPinjam/HalamanAwalSimpanPinjam';
 import ListPengajuan from './component/SimpanPinjam/ListPengajuan';
 import ProsesPengajuan from './component/SimpanPinjam/ProsesPengajuan';
+import GeneralSettings from './component/UserAdmin/GeneralSettings'
+import ConfigCMS from './component/UserAdmin/ConfigCMS.jsx';
+import ListBerita from './component/UserAdmin/ListBerita.jsx';
+import AccountManagement from './component/UserAdmin/AccountManagement.jsx';
+import CreateBeritaAdmin from './component/UserAdmin/CreateBeritaAdmin.jsx';
+import UpdateBeritaAdmin from './component/UserAdmin/UpdateBeritaAdmin.jsx';
+
 
 function App() {
 
@@ -51,6 +63,13 @@ function App() {
         <Route exact path='/ShowBerita/:id' element = {<ShowBerita/>} />
         <Route exact path='/EditBerita/:id' element = {<EditBerita/>} />
         <Route exact path='/ListUser' element = {<ListUser/>} />
+
+        <Route exact path='/generalsettings' element = {<GeneralSettings/>} />
+        <Route exact path='/cmsconfig' element = {<ConfigCMS/>} />
+        <Route exact path='/accountmanagement' element = {<AccountManagement/>} />
+        <Route exact path='/newsmanagement' element = {<ListBerita/>} />
+        <Route exact path='/createberita' element = {<CreateBeritaAdmin/>} />
+        <Route exact path='/updateberita' element = {<UpdateBeritaAdmin/>} />
         </Routes>
       </Router>
   )

@@ -8,6 +8,9 @@ export default {
     extend: {
       gradients: {
         'custom': '4AA1B4 57C1A0',
+      },
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif'],
       }
     },
   },

@@ -152,7 +152,7 @@ function Header() {
       : 'hover:bg-white hover:text-gray-800 block font-semibold text-[15px] px-3 py-2 rounded-md transition duration-300'
   }
 >
-  Koperasi Widya Mandala
+  Koperasi Wiyata Mandala
 </NavLink>
 
             </li>

@@ -34,8 +34,16 @@ const MsGeneralSetting = db.define("MS_GENERALSETTING", {
         type: DataTypes.STRING(50),
         allowNull: true
     },
+    GS_NAME: {
+        type: DataTypes.STRING(50),
+        allowNull: true
+    },
     GS_CODE: {
         type: DataTypes.STRING(20),
+        allowNull: true
+    },
+    GS_DESC: {
+        type: DataTypes.STRING(50),
         allowNull: true
     },
     DATA_TYPE: {
