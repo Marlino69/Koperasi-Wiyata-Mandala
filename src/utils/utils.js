@@ -88,6 +88,7 @@ export const getCurrentLoggedInData = () => {
 
         // Fetch user data using the decoded userId
         const response = await axios.get(`http://localhost:5000/getOneUser/${userId}`);
+        console.log("API Response:", response.data);
         setData(response.data);  // Set the user data after fetching
       } catch (err) {
         setError('Failed to fetch user data');

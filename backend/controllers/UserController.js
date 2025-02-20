@@ -10,6 +10,7 @@ import TypePinjaman from "../models/MS_TYPE_PINJAMAN.js";
 import TypeSimpanan from "../models/MS_TYPE_SIMPANAN.js";
 import HistoryPinjaman from "../models/TR_HISTORY_DATA_PINJAMAN.js";
 import HistorySimpanan from "../models/TR_HISTORY_DATA_SIMPANAN.js";
+import MS_USER from "../models/MS_USER.js";
 
 export const getUsers = async (req, res) => {
     try {
@@ -371,9 +372,7 @@ export const getOneUser = async (req, res) => {
     const { id } = req.params;
     try {
         const data = await Users.findOne({
-            where: {
-                UUID_MS_USER: id
-            },
+            where: { UUID_MS_USER: id },
             include: [
                 {
                     model: MS_JOB,
@@ -389,10 +388,13 @@ export const getOneUser = async (req, res) => {
                 "EMAIL",
                 "TANGGAL_LAHIR",
                 "ALAMAT",
+                "UNIT_KERJA",
+                "NOMOR_ANGGOTA",
+                "CURRENT_TABUNGAN",
                 "createdAt"
             ]
         });
-        res.status(200).json(data)
+        res.status(200).json(data);
     } catch (error) {
         console.error("Error finding user:", error);
         res.status(500).json({ message: "Error finding user", error });

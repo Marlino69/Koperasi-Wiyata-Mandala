@@ -284,15 +284,15 @@ function HalamanAwalSimpanPinjam() {
                           </div>
                           <div className="flex mb-2">
                           <p className="text-lg w-48">Unit Kerja</p>
-                          <p className="text-lg ml-4">: Sekolah</p>
+                          <p className="text-lg ml-4">: {userData?.UNIT_KERJA}</p>
                           </div>
                           <div className="flex mb-2">
                           <p className="text-lg w-48">Nomor Anggota</p>
-                          <p className="text-lg ml-4">: A79123</p>
+                          <p className="text-lg ml-4">: {userData?.NOMOR_ANGGOTA}</p>
                           </div>
                           <div className="flex mb-2">
                           <p className="text-lg w-48">Total Tabungan</p>
-                          <p className="text-lg ml-4">: Rp 750.650,00</p>
+                          <p className="text-lg ml-4">: {userData?.CURRENT_TABUNGAN}</p>
                           </div>
                           <div className="flex mb-2">
                           <p className="text-lg w-48">Tanggal Bergabung</p>
